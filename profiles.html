@@ -22,12 +22,22 @@
     <link rel="stylesheet" href="./css/onepage-scroll.css"/>
     <script>
       $(document).ready(function(){
+        var repChk = false;
+        if(Mobile()){
+          repChk = true;
+        } else {
+          repChk = false;
+        }
         $("#profiles").onepage_scroll({
           sectionContainer: "section",
-          responsiveFallback: 600,
+          responsiveFallback: repChk,
           loop: false
         });
       });
+
+      function Mobile(){
+	      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
     </script>
   </head>
   <body>
@@ -35,11 +45,11 @@
       <div class="Header_content__4A1k6">
         <div class="Header_title__EwaWq">LYS Portfolio</div>
         <div class="Header_navigation-menus__1y0cV">
-          <a href="#2" class="Header_navigation-menu__2Elgc">About me</ㅁ>
-          <a href="#3" class="Header_navigation-menu__2Elgc">Skills</a>
-          <a href="#4" class="Header_navigation-menu__2Elgc">Archiving</a>
-          <a href="#5" class="Header_navigation-menu__2Elgc">Projects</a>
-          <a href="#11" class="Header_navigation-menu__2Elgc">Career</a>
+          <a data-index="2" href="#about-me" class="Header_navigation-menu__2Elgc">About me</ㅁ>
+          <a data-index="3" href="#skills" class="Header_navigation-menu__2Elgc">Skills</a>
+          <a data-index="4" href="#archiving" class="Header_navigation-menu__2Elgc">Archiving</a>
+          <a data-index="5" href="#projects" class="Header_navigation-menu__2Elgc">Projects</a>
+          <a data-index="11" href="#career" class="Header_navigation-menu__2Elgc">Career</a>
         </div>
       </div>
     </header>
@@ -57,8 +67,8 @@
             </div>
           </div>
         </section>
-        <section class="page2">
-          <article class="AboutMe_AboutMe__1TCRF" id="about-me">
+        <section class="page2" id="about-me">
+          <article class="AboutMe_AboutMe__1TCRF">
             <div class="AboutMe_content__2uEf5">
               <div class="SectionTitle_SectionTitle__3f_lU">
                 <div class="SectionTitle_text__hWi93" style="color:#000000;border-bottom-color:#cccccc">ABOUT ME</div>
@@ -138,8 +148,8 @@
               </div>
             </article>
         </section>
-        <section class="page3">
-          <article class="Skills_Skills__30WZi" id="skills">
+        <section class="page3" id="skills">
+          <article class="Skills_Skills__30WZi" >
             <div class="Skills_content__1b1wq">
               <div class="SectionTitle_SectionTitle__3f_lU">
                 <div class="SectionTitle_text__hWi93" style="color:#000000;border-bottom-color:#000000">SKILLS</div>
@@ -177,8 +187,8 @@
             </div>
           </article>
         </section>
-        <section class="page4">
-            <article class="Archiving_Archiving__3P8w6" id="archiving">
+        <section class="page4" id="archiving">
+            <article class="Archiving_Archiving__3P8w6" >
               <div class="Archiving_content__1Mmrq">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#6c757d">ARCHIVING</div>
@@ -220,8 +230,8 @@
             </div>
           </article>
         </section>
-        <section class="page5">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page5" id="projects">
+          <article class="Projects_Projects__KtiS7" >
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -267,9 +277,9 @@
                       </div>
                       <div class="Projects_descriptions__1DeYX">
                         <div class="Projects_main-description__3lCkI">
-                          <b>복잡한 상황에서의 N빵 계산을 도와 누가 누구에게 얼마를 보내야 하는지 계산해 주는 모바일 앱</b>입니다. 동아리 활동을 하던 당시 여러 모임에서 N빵 계산 시 어려움을 겪은 몇몇 상황에서 아이디어를 얻어 개발하였습니다.<p></p>이미 Android Native로 개발을 완료한 프로젝트였지만, 
-                          <span class="Projects_red__2npyK">React Native</span>의 학습을 위해 이를 다시 React Native로 개발하였습니다. 이전 프로젝트와 달리 이번에는 전반적인 로직과 UI &amp; UX를 개선하고 
-                          <span class="Projects_red__2npyK">실제로 스토어에 출시</span>까지 했다는 점에서 의미가 있습니다. 이제는 마음만 먹으면 모바일 앱도 개발하고 출시할 수 있다는 자신감을 준 프로젝트입니다.<p></p>
+                          
+                          
+                          <p></p>
                           <div class="Projects_show-readme-btn__cuVoG">
                             자세히 보기 ▶ README
                           </div>
@@ -294,8 +304,8 @@
                 </div>
             </article>
         </section>
-        <section class="page6">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page6" id="projects2">
+          <article class="Projects_Projects__KtiS7" >
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -359,8 +369,8 @@
                 </div>
             </article>
         </section>
-        <section class="page7">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page7" id="projects3">
+          <article class="Projects_Projects__KtiS7" >
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -420,8 +430,8 @@
                 </div>
             </article>
         </section>
-        <section class="page8">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page8" id="projects4">
+          <article class="Projects_Projects__KtiS7">
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -490,8 +500,8 @@
                 </div>
             </article>
         </section>
-        <section class="page9">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page9" id="projects5">
+          <article class="Projects_Projects__KtiS7">
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -560,8 +570,8 @@
                 </div>
             </article>
         </section>
-        <section class="page10">
-          <article class="Projects_Projects__KtiS7" id="projects">
+        <section class="page10" id="projects6">
+          <article class="Projects_Projects__KtiS7" >
               <div class="Projects_content__2sdEt">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#ffffff;border-bottom-color:#cccccc">PROJECTS</div>
@@ -627,8 +637,8 @@
                 </div>
             </article>
         </section>
-        <section class="page11">
-          <article class="Career_Career__1AUMn" id="career">
+        <section class="page11" id="career">
+          <article class="Career_Career__1AUMn">
               <div class="Career_content__1aikH">
                 <div class="SectionTitle_SectionTitle__3f_lU">
                   <div class="SectionTitle_text__hWi93" style="color:#000000;border-bottom-color:#000000">CAREER</div>
