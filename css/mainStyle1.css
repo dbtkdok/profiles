@@ -165,7 +165,7 @@
     opacity: 1
 }
 .Masthead_Masthead__3PNvE .Masthead_content__-86Ao .Masthead_description__l0Duh {
-    margin: 0 auto 2rem;
+    margin: 0 auto 15px;
     font-weight: 400;
     font-size: 1.25rem;
     color: hsla(0, 0%, 100%, 0.75);
@@ -173,7 +173,7 @@
 }
 .Masthead_Masthead__3PNvE .Masthead_content__-86Ao .Masthead_find-out-more__3a_3R {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 10px 15px;
     border: none;
     border-radius: 10rem;
     background-color: #f4623a;
@@ -196,8 +196,7 @@
         font-size: 3rem
     }
     .Masthead_Masthead__3PNvE .Masthead_content__-86Ao .Masthead_description__l0Duh {
-        font-size: 1rem
-    }
+        font-size: 14px;word-break: keep-all;}
 }
 @media(max-width:576px) {
     .Masthead_Masthead__3PNvE .Masthead_content__-86Ao .Masthead_find-out-more__3a_3R:hover {
@@ -244,10 +243,14 @@
 }
 @media(max-width:576px) {
     .SectionTitle_SectionTitle__3f_lU .SectionTitle_text__hWi93 {
-        font-size: 2rem
-    }
+        font-size: 25px;}
     .SectionTitle_SectionTitle__3f_lU .SectionTitle_link-wrapper__3yMsW:hover {
         opacity: .5
+    }
+    .SectionTitle_SectionTitle__3f_lU .SectionTitle_link-wrapper__3yMsW {
+        width: 1rem;
+        height: 1rem;
+
     }
 }
 .AboutMe_AboutMe__1TCRF {
@@ -261,7 +264,7 @@
     -webkit-box-sizing: border-box;
     width: 100%;
     max-width: 71.25rem;
-    padding: 4rem 2rem;
+    padding: 15px 10px;
     margin: 0 auto;
 }
 .AboutMe_AboutMe__1TCRF .AboutMe_content__2uEf5 .AboutMe_basic-infos__36Rb0 {

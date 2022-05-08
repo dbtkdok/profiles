@@ -10,9 +10,12 @@
     <meta property="og:description" content="BackEnd Developer 이유상의 Portfolio"/>
     <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/aos.js"></script>
     <link rel="icon" href="./favicon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/aos_styles.css"/>
+    <link rel="stylesheet" href="./css/aos.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap"/>
     <link rel="stylesheet" href="./css/mainStyle3.css"/>
     <link rel="stylesheet" href="./css/mainStyle2.css"/>
@@ -22,6 +25,7 @@
     <link rel="stylesheet" href="./css/onepage-scroll.css"/>
     <script>
       $(document).ready(function(){
+        AOS.init();
         var repChk = false;
         if(Mobile()){
           repChk = true;
@@ -58,11 +62,11 @@
         <section class="page1">
           <div class="Masthead_Masthead__3PNvE">
             <div class="Masthead_content__-86Ao">
-              <div class="Masthead_title__56mjq">
+              <div class="Masthead_title__56mjq" data-aos="zoom-in-up" data-aos-duration="3000" >
                   - 이유상 -<br/>웹 개발자 포트폴리오
               </div>
-              <hr class="Masthead_divider__1wT-h"/>
-              <div class="Masthead_description__l0Duh">안녕하세요.<br/>공부가 취미인 웹 개발자입니다.<br/>매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저의 장점입니다.</div>
+              <hr class="Masthead_divider__1wT-h" />
+              <div data-aos="fade-left" data-aos-duration="3000" class="Masthead_description__l0Duh">안녕하세요.<br/>공부가 취미인 웹 개발자입니다.<br/>매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저의 장점입니다.</div>
               <div class="Masthead_find-out-more__3a_3R">더 알아보기 ↓</div>
             </div>
           </div>
@@ -71,7 +75,7 @@
           <article class="AboutMe_AboutMe__1TCRF">
             <div class="AboutMe_content__2uEf5">
               <div class="SectionTitle_SectionTitle__3f_lU">
-                <div class="SectionTitle_text__hWi93" style="color:#000000;border-bottom-color:#cccccc">ABOUT ME</div>
+                <div class="SectionTitle_text__hWi93"  style="color:#000000;border-bottom-color:#cccccc">ABOUT ME</div>
                 <div class="SectionTitle_link-wrapper__3yMsW">
                   <img class="SectionTitle_link__3A4rU" src="./images/black-link.png" alt=""/>
                 </div>
