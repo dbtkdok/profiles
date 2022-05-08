@@ -391,8 +391,8 @@ overflow: auto;}
     -webkit-box-sizing: border-box;
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
-    width: 15rem;
-    height: 300px;padding: 15px;
+    width: 20rem;
+    padding: 15px;
     margin: 10px 15px;
     border-radius: 1rem;
     background-color: #fff;
@@ -428,7 +428,7 @@ overflow: auto;}
 .Skills_Skills__30WZi .Skills_content__1b1wq .Skills_tech-stacks-container__3SGhh .Skills_tech-stacks__3WypH .Skills_img__AYqwK {
     display: block;
     width: 100%;
-height: 80%;}
+}
 @media(max-width:992px) {
     .Skills_Skills__30WZi .Skills_content__1b1wq {
         height: 119rem

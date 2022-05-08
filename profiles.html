@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="./css/bootstrap.css"/>
     <link rel="stylesheet" href="./css/aos_styles.css"/>
     <link rel="stylesheet" href="./css/aos.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap"/>
     <link rel="stylesheet" href="./css/mainStyle3.css"/>
     <link rel="stylesheet" href="./css/mainStyle2.css"/>
     <link rel="stylesheet" href="./css/mainStyle1.css"/>
     
+
     <script type="text/javascript"  src="./js/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="./js/swiper-bundle.js"></script>
     <link rel="stylesheet" href="./css/onepage-scroll.css"/>
     <script>
       $(document).ready(function(){
@@ -36,6 +39,15 @@
           sectionContainer: "section",
           responsiveFallback: repChk,
           loop: false
+        });
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          loop : true
         });
       });
 
@@ -75,7 +87,7 @@
           <article class="AboutMe_AboutMe__1TCRF">
             <div class="AboutMe_content__2uEf5">
               <div class="SectionTitle_SectionTitle__3f_lU">
-                <div class="SectionTitle_text__hWi93"  style="color:#000000;border-bottom-color:#cccccc">ABOUT ME</div>
+                <div class="SectionTitle_text__hWi93"  data-aos="fade-left" data-aos-duration="3000" style="color:#000000;border-bottom-color:#cccccc">ABOUT ME</div>
                 <div class="SectionTitle_link-wrapper__3yMsW">
                   <img class="SectionTitle_link__3A4rU" src="./images/black-link.png" alt=""/>
                 </div>
@@ -162,31 +174,37 @@
                 </div>
               </div>
               <div class="Skills_tech-stacks-container__3SGhh">
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Backend</div>
-                    <img class="Skills_img__AYqwK" src="./images/skills/backend.png" alt=""/>
-                  </div>
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Frontend</div>
-                      <img class="Skills_img__AYqwK" src="./images/skills/frontend.png" alt=""/>
-                  </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Backend</div>
+                      <img class="Skills_img__AYqwK" src="./images/skills/backend.png" alt=""/>
+                    </div>
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Frontend</div>
+                        <img class="Skills_img__AYqwK" src="./images/skills/frontend.png" alt=""/>
+                    </div>
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Deployment</div>
+                      <img class="Skills_img__AYqwK" src="./images/skills/deployment.png" alt=""/>
+                    </div>
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Version Control</div>
+                      <img class="Skills_img__AYqwK" src="./images/skills/version-control.png" alt=""/>
+                    </div>
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Communication</div>
+                      <img class="Skills_img__AYqwK" src="./images/skills/communication.png" alt=""/>
+                    </div>
+                    <div class="Skills_tech-stacks__3WypH swiper-slide">
+                      <div class="Skills_title__3vC8g">Database</div>
+                      <img class="Skills_img__AYqwK" src="./images/skills/database.png" alt=""/>
+                    </div>
                     
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Deployment</div>
-                    <img class="Skills_img__AYqwK" src="./images/skills/deployment.png" alt=""/>
                   </div>
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Version Control</div>
-                    <img class="Skills_img__AYqwK" src="./images/skills/version-control.png" alt=""/>
-                  </div>
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Communication</div>
-                    <img class="Skills_img__AYqwK" src="./images/skills/communication.png" alt=""/>
-                  </div>
-                  <div class="Skills_tech-stacks__3WypH">
-                    <div class="Skills_title__3vC8g">Database</div>
-                    <img class="Skills_img__AYqwK" src="./images/skills/database.png" alt=""/>
-                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                  
               </div>
             </div>
           </article>
